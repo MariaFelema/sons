@@ -4,7 +4,7 @@ function tocaSomPom(){
     }
 
 //Chamando/invocando a função tocaSomPom pelo clique do botão pom.
-    document.querySelectorAll('.tecla').onclick = tocaSomPom
+    document.querySelectorAll('.tecla').onclick = tocaSomPom;
 
 //Criando referência constante listaDeTeclas buscando todos os itens pela classe .tecla.
     const listaDeTeclas = document.querySelectorAll('.tecla');
