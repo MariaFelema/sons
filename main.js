@@ -11,3 +11,11 @@ function tocaSomPom(){
 
 //Invocando a função tocaSomPom a partir do item "0", 1º botão.
     listaDeTeclas[0].onclick = tocaSomPom;
+
+//Criando referência variável "contador" iniciando = 0
+let contador = 0;
+
+//Estrutura de repetição "while" significa "enquanto algo acontecer"
+while(){
+
+}
