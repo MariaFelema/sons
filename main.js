@@ -6,16 +6,13 @@ function tocaSom(idElementoAudio){
 //Criando referência constante listaDeTeclas buscando todos os itens pela classe .tecla.
     const listaDeTeclas = document.querySelectorAll('.tecla');
 
-//Criando referência variável "contador" iniciando = 0
-    let contador = 0;
-
-//Estrutura de repetição "while" significa "enquanto algo acontecer"
-while(contador < listaDeTeclas.length){
-    const efeito = listaDeTeclas[contador].classList[1];
-    const idAudio = "#som_"+ efeito; 
-    listaDeTeclas[contador].onclick = function(){
+//Estrutura de repetição "while" significa "enquanto algo acontecer"; mudou while para "for"
+for(let contador = 0;contador < listaDeTeclas.length; contador ++){
+    const tecla = listaDeTeclas[contador];
+    const efeito = tecla.classList[1]; // acessa o 2º item da classe de teclas
+    const idAudio = `#som_${efeito}`; //template string
+    tecla.onclick = function(){ //criar função anônima para chamar tocaSom
         tocaSom(idAudio);
     }
-    contador = contador + 1;
-    console.log(contador);
+
 }
